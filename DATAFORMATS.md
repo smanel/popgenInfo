@@ -3,8 +3,9 @@ title: "Data classes"
 ---
 
 The following table describes specialized objects to store data represented in
-population genetics packages. Conversion between all types is possible. Anyone
-developing a package for population genetic analysis is encouraged to use or
+population genetics packages. Conversion between all types is possible.
+
+Anyone developing a package for population genetic analysis is encouraged to use or
 build upon these data structures. If a new data structure is needed, please
 provide a conversion method to one or more of the classes listed below.
 
@@ -41,4 +42,7 @@ provide a conversion method to one or more of the classes listed below.
 | | can be converted to `data.frame` or `matrix` with appropriate `as.` functions. | |
 | | has manipulation functions like `subset` which will select certain strata and/or loci, `merge` to combine mulitple `gtypes`, and `summary`. | |
 | | can create input files for Genepop, STRUCTURE, fastsimcoal, Arlequin, MEGA, and PHASE | |
+| **multiDNA** {S4} (*apex*) | stores multiple `DNAbin` objects from *ape* | |
+| **multiPhyDat** {S4} (*apex*) | stores multiple `phyDat` objects from *phangorn* | |
+
 
